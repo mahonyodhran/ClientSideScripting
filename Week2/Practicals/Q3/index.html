@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            let arg = "flags/argentina.jpg";
+            let aus = "flags/australia.jpg";
+            let bol;
+            let cuba;
+            let fin;
+            let fra;
+            let ita;
+            let peru;
+            let syria;
+            let tun;
+        </script>
+    </head>
+
+    <body>
+        <form action="" method="get">
+            <table border="1">
+                <tr align="center">
+                    <td>Country</td>
+                    <td>Flag</td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/argentina.jpg'">
+                        Argentina<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/australia.jpg'">
+                        Australia<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/Bolivia.jpg'">
+                        Bolivia<br />
+                        <input type="radio" name="flags" onclick="document.getElementById('flag').src='flags/Cuba.jpg'">
+                        Cuba<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/Finland.jpg'">
+                        Finland<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/France.jpg'">
+                        France<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/Italy.jpg'">
+                        Italy<br />
+                        <input type="radio" name="flags" onclick="document.getElementById('flag').src='flags/Peru.jpg'">
+                        Peru<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/Syria.jpg'">
+                        Syria<br />
+                        <input type="radio" name="flags"
+                            onclick="document.getElementById('flag').src='flags/Tunisia.jpg'">
+                        Tunisia
+                    </td>
+                    <td>
+                        <img id="flag">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Headlines</title>
+        <script>
+            let braves = `ATLANTA (AP) - The Washington Nationals would like a restart. The Atlanta Braves just want to keep the winning pace they’ve set during the first week of the season. http://sports.yahoo.com/mlb/recap?gid=290412115"`;
+            let chipper = `ATLANTA (AP) - Chipper Jones drove in two runs, including a tiebreaking single, and the Atlanta Braves beat Washington 8-5 on Sunday to hand the Nationals their sixth straight loss to start the season. http://www.newsvine.com/_news/2009/04/11/2667835-jones-braves-beat-winless-nationals-8-5?category=sports`;
+            let eweek = `(eWeek.com) - Apple is close to hitting 1 billion downloads from its App Store and plans on a prize giveaway for whoever downloads the billionth application that includes a MacBook Pro and an iPod Touch. http://www.eweek.com/c/a/Application-Development/eWeek-Newsbreak-April-13-2009/`;
+            let washington = `WASHINGTON (Reuters) - President Barack Obama said on Friday the recession-hit US economy was showing 'glimmers of hope' despite remaining under strain and promised further steps in coming weeks to tackle the financial crisis. http://in.reuters.com/article/idUSWBT01103020090411`;
+            let italy = `L'Aquila's chief prosecutor announced an investigation into allegations of shoddy construction as workers continued to scour the rubble for people still missing after a devastating earthquake five days ago. http://in.reuters.com/article/idUSWBT01103020090411`;
+        </script>
+    </head>
+
+    <body>
+        <h1>News</h1>
+        <table border="1">
+            <tr>
+                <td>Headline</td>
+                <td>Story</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="headlines">
+                        <option onclick="document.getElementById('news').value=braves">Braves</option>
+                        <option onclick="document.getElementById('news').value=chipper">Chipper</option>
+                        <option onclick="document.getElementById('news').value=eweek">eWeek</option>
+                        <option onclick="document.getElementById('news').value=washington">Washington</option>
+                        <option onclick="document.getElementById('news').value=italy">Italy</option>
+                    </select>
+                    <!-- <form action="" method="GET">
+                        <input type="radio" name="news" onclick="document.getElementById('desc').value=braves;">
+                        <label>Braves</label><br><br>
+                        <input type="radio" name="news" onclick="document.getElementById('desc').value=chipper;">
+                        <label>Chipper</label><br><br>
+                        <input type="radio" name="news" onclick="document.getElementById('desc').value=eweek;">
+                        <label>eWeek</label><br><br>
+                        <input type="radio" name="news" onclick="document.getElementById('desc').value=washington;">
+                        <label>Washington</label><br><br>
+                        <input type="radio" name="news" onclick="document.getElementById('desc').value=italy;">
+                        <label>Italy</label>
+                    </form> -->
+                </td>
+
+                <td>
+                    <textarea id="news" cols="50" rows="6">
+                        </textarea>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>
